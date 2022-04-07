@@ -13,9 +13,13 @@
   }
 }
 
+.Num-label {
+
+}
+
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #a87e08;
+  min-height: 15vh;
   display: flex;
   flex-direction: column;
   align-items: center;
