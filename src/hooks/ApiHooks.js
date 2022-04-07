@@ -2,7 +2,6 @@ const apiBaseUrl = 'http://localhost:3001/primeapi'
 
 const getIsPrimeNumber = async (number) => {
     try {
-        console.log(number)
         const response = await fetch(`${apiBaseUrl}/checkprime?number=${number}`, {
             headers: {
                 'Content-Type': 'application/json',
@@ -10,17 +9,17 @@ const getIsPrimeNumber = async (number) => {
             },
         })
         if (response.ok) {
-            return await response.json()
+            return await response.json();
         }
-        return null
+        return null;
     } catch (error) {
-        throw error
+        throw error;
     }
 }
 
 const getSumAndIsPrimeNumber = async (numbers) => {
     try {
-        const nums = JSON.stringify(numbers)
+        const nums = JSON.stringify(numbers);
         const response = await fetch(`${apiBaseUrl}/sumandcheck?numbers=${nums}`, {
             headers: {
                 'Content-Type': 'application/json',
@@ -28,12 +27,12 @@ const getSumAndIsPrimeNumber = async (numbers) => {
             },
         })
         if (response.ok) {
-            return await response.json()
+            return await response.json();
         }
-        return null
+        return null;
     } catch (error) {
-        throw error
+        throw error;
     }
 }
 
-export {getSumAndIsPrimeNumber, getIsPrimeNumber}
+export {getSumAndIsPrimeNumber, getIsPrimeNumber};
