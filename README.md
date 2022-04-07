@@ -2,6 +2,12 @@
 
 This project is a code sample application that is a client for my [Express.js Prime Calculator](https://github.com/tiitustelke/prime-calculator)
 
+## Nice things about this React.js App
+
+- Integration tests using Jest and React test libraries
+- Input sanitation
+- Not unnecessarily complicated, simple and clear code
+
 ## How to run this app
 
 1. First set up the Prime Calculator Express.js server following the README instructions there. Make sure you have installed Node.js.
